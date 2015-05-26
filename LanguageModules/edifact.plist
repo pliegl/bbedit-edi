@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<!--  Color scheme for EDIFACT files -->
+	<dict>
+		<key>BBEditDocumentType</key>
+		<string>CodelessLanguageModule</string>
+		<key>BBLMLanguageDisplayName</key>
+		<string>EDIFACT</string>
+		<key>BBLMLanguageCode</key>
+		<string>EDI</string>
+		<key>BBLMColorsSyntax</key>
+		<true/>
+		<!-- Define common EDIFACT Segments as Predefined Names, in order to allow for
+	a different coloring and better distinction from other EDIFACT segments in the text-->
+		<key>BBLMPredefinedNameList</key>
+		<array>
+			<string>UNA</string>
+			<string>UNB</string>
+			<string>UNG</string>
+			<string>UNH</string>
+			<string>UNS</string>
+			<string>UNT</string>
+			<string>UNE</string>			
+			<string>UNZ</string>
+		</array>
+		<!-- Define other EDIFACT segments as keywords - this will ensure a different
+		coloring compared to common EDIFACT segments
+		Currently all segments used in the following EDIFACT EANCOM D96A and D01B document
+		types are included:
+		 - ORDERS
+		 - DESADV
+		 - INVOIC
+		 - DELFOR
+		  -->
+		<key>BBLMKeywordList</key>
+		<array>
+			<string>ALC</string>
+			<string>ALI</string>
+			<string>BGM</string>
+			<string>CNT</string>
+			<string>COM</string>
+			<string>CPS</string>
+			<string>CTA</string>
+			<string>CUX</string>
+			<string>DTM</string>
+			<string>EQD</string>
+			<string>FII</string>
+			<string>FTX</string>
+			<string>GEI</string>			
+			<string>GIN</string>
+			<string>IMD</string>
+			<string>LIN</string>
+			<string>LOC</string>
+			<string>MEA</string>
+			<string>MOA</string>
+			<string>NAD</string>
+			<string>PAC</string>
+			<string>PAI</string>
+			<string>PAT</string>
+			<string>PCD</string>
+			<string>PCI</string>
+			<string>PIA</string>
+			<string>PRI</string>
+			<string>QTY</string>
+			<string>QVR</string>
+			<string>RFF</string>
+			<string>RTE</string>
+			<string>SCC</string>
+			<string>SEL</string>
+			<string>TAX</string>
+			<string>TDT</string>
+			<string>TOD</string>
+		</array>
+		<!-- Comment-out string - although EDIFACT has no concept for that, we take # -->
+		<key>BBLMCommentLineDefault</key>
+		<string>#</string>
+		<!-- Define the character class of EDIFACT  -->
+		<key>Language Features</key>
+		<dict>
+			<key>Identifier and Keyword Character Class</key>
+			<string>A-Za-z0-9_\?!</string>
+			<!-- Use String patterns to identify data element separators (+) as well as 
+			segment separators (') -->
+			<key>String Pattern</key>
+        	<string>[\+]|[\']</string>
+        	<!-- Use Comment patterns to identfy component data element separators (:) -->
+        	<key>Comment Pattern</key>
+        	<string>[:]</string>
+		</dict>
+		<!-- Define .edi as EDIFACT file extension -->
+		<key>BBLMSuffixMap</key>
+		<array>
+			<dict>
+				<key>BBLMLanguageSuffix</key>
+				<string>.edi</string>
+			</dict>
+			<dict>
+				<key>BBLMLanguageSuffix</key>
+				<string>.edi</string>
+			</dict>
+		</array>
+	</dict>
+</plist>

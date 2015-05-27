@@ -4,7 +4,7 @@ This repository contains some [EDIFACT](http://en.wikipedia.org/wiki/EDIFACT) en
 The tools include syntax highlighting for EDIFACT files as well as two text filters for expanding/flattening EDIFACT files.
 
 
-#EDIFACT Syntax highlighting
+#EDIFACT syntax highlighting
 
 The [codeless language module (CLM)](http://www.barebones.com/support/develop/clm.html) provided in this repository adds syntax highlighting for [EDIFACT](http://en.wikipedia.org/wiki/EDIFACT) to [TextWrangler](http://www.barebones.com/products/textwrangler/). 
 

@@ -1,16 +1,16 @@
-#TextWrangler EDI tools
+# TextWrangler EDI tools
 This repository contains some [EDIFACT](http://en.wikipedia.org/wiki/EDIFACT) enhancements for [TextWrangler editor](http://www.barebones.com/products/textwrangler/) on Mac OS. The goal is to make working with plain EDIFACT text files less tedious, by adding a better EDIFACT user experience.
 
 The tools include syntax highlighting for EDIFACT files as well as two text filters for expanding/flattening EDIFACT files.
 
 
-#EDIFACT syntax highlighting
+# EDIFACT syntax highlighting
 
 The [codeless language module (CLM)](http://www.barebones.com/support/develop/clm.html) provided in this repository adds syntax highlighting for [EDIFACT](http://en.wikipedia.org/wiki/EDIFACT) to [TextWrangler](http://www.barebones.com/products/textwrangler/). 
 
 The CLM may also be used with the professional version of TextWrangler, [BBEdit](http://www.barebones.com/products/bbedit/), although this has not been tested yet.
 
-##How to use
+## How to use
 
 Take the file `edifact.plist` and copy it to `~/Library/Application Support/TextWrangler/Language Modules`.
  
@@ -42,7 +42,7 @@ The following colors may be set:
 
  * `Comments` for component data element separators `:`
 
-##Supported EDIFACT document types
+## Supported EDIFACT document types
 
 Currently, the following document types of EDIFACT EANCOM D01B and EDIFACT EANCOM D96A are supported:
 
@@ -52,11 +52,11 @@ Currently, the following document types of EDIFACT EANCOM D01B and EDIFACT EANCO
  * DELFOR
 
  
-#EDIFACT Text Filters
+# EDIFACT Text Filters
 
 The EDIFACT text filters facilitate the processing of EDIFACT files by automatically adding line breaks to EDIFACT files (for better legibility) and removing line breaks (to make them EDIFACT compliant - EDIFACT files must not contain line breaks).
 
-##How to use
+## How to use
 
 Take the files `expandEDIFACT.sh` and `flattenEDIFACT.sh` and copy them to `~/Library/Application Support/TextWrangler/Text Filters`.
  
@@ -66,7 +66,7 @@ Applying `expandEDIFACT.sh` will add line breaks after every `'`.
 
 Applying `flattenEDIFACT.sh` will remove any line breaks from the EDIFACT file, thus, making it EDIFACT-compliant.
 
-##Prerequisites
+## Prerequisites
 
 Note, that `expandEDIFACT.sh` uses the `gsed` command. Install GNU command line tools first, using [Homebrew](http://brew.sh). See [https://www.topbug.net/blog/2013/04/14/install-and-use-gnu-command-line-tools-in-mac-os-x/](https://www.topbug.net/blog/2013/04/14/install-and-use-gnu-command-line-tools-in-mac-os-x/) for further details.
 
